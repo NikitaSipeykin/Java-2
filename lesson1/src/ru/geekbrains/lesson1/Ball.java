@@ -15,6 +15,12 @@ public class Ball extends Sprite {
         halfWidth = halfHeight;
     }
 
+    Ball(int x, int y){
+        this();
+        this.x = x;
+        this.y = y;
+    }
+
     @Override
     void update(GameCanvas canvas, float deltaTime) {
         x += vX * deltaTime;
